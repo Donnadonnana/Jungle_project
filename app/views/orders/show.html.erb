@@ -25,10 +25,13 @@
          <tr>
           <th colspan="2">
            <%= image_tag item.product.image.tiny.url %>
+           <%= item.product.name%>
+           <br/>
+           <%= item.product.description%>
           </th>
-          <th><%= item.item_price %></th>
+          <th>$<%= item.item_price %></th>
           <th><%= item.quantity %></th>
-          <th><%= item.total_price %></th>
+          <th>$<%= item.total_price %></th>
         </tr>
         <% end %>
        
